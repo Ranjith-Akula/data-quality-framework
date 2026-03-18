@@ -1,0 +1,27 @@
+{
+  "dataset_name": "Sales_Data_Reconciliation",
+  "source": {
+    "type": "csv",
+    "path": "examples/source_sales.csv"
+  },
+  "target": {
+    "type": "csv",
+    "path": "examples/target_sales.csv"
+  },
+  "reconciliation": {
+    "compare_row_count": true,
+    "compare_aggregates": ["revenue", "quantity"],
+    "record_comparison": {
+      "primary_keys": ["transaction_id"],
+      "mapping": {
+        "transaction_id": "tx_id",
+        "product_code": "prod_code",
+        "revenue": "total_amount",
+        "quantity": "qty"
+      },
+      "tolerances": {
+        "revenue": 0.01
+      }
+    }
+  }
+}

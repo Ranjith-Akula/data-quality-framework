@@ -1,0 +1,5 @@
+transaction_id,product_code,revenue,quantity
+101,A01,100.50,2
+102,B02,50.00,1
+103,C03,200.00,4
+104,A01,100.50,2
