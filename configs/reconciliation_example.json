@@ -2,11 +2,11 @@
   "dataset_name": "Sales_Data_Reconciliation",
   "source": {
     "type": "csv",
-    "path": "examples/source_sales.csv"
+    "path": "../examples/source_sales.csv"
   },
   "target": {
     "type": "csv",
-    "path": "examples/target_sales.csv"
+    "path": "../examples/target_sales.csv"
   },
   "reconciliation": {
     "compare_row_count": true,

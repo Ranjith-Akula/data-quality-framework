@@ -10,7 +10,7 @@ from src.core.validator import Validator
 from src.reporting.formatter import ReportFormatter
 
 def main():
-    config_path = "configs/dq_validation_example.json"
+    config_path = "../configs/dq_validation_example.json"
     
     print("1. Loading Configuration")
     config = ConfigParser.load_config(config_path)
