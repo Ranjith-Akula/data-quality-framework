@@ -1,0 +1,36 @@
+{
+  "dataset_name": "Employee_Data",
+  "source": {
+    "type": "csv",
+    "path": "examples/dummy_employee_data.csv"
+  },
+  "rules": [
+    {
+      "name": "Check Employee ID Completeness",
+      "type": "completeness",
+      "column": "emp_id",
+      "threshold": 100.0
+    },
+    {
+      "name": "Check Employee ID Uniqueness",
+      "type": "uniqueness",
+      "column": "emp_id",
+      "threshold": 100.0
+    },
+    {
+      "name": "Check Valid Age Range",
+      "type": "range",
+      "column": "age",
+      "min": 18,
+      "max": 65,
+      "threshold": 0.0
+    },
+    {
+      "name": "Check Valid Email Format",
+      "type": "regex",
+      "column": "email",
+      "pattern": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      "threshold": 0.0
+    }
+  ]
+}
