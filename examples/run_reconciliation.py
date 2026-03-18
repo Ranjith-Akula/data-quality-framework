@@ -10,7 +10,7 @@ from src.core.reconciler import Reconciler
 from src.reporting.formatter import ReportFormatter
 
 def main():
-    config_path = "configs/reconciliation_example.json"
+    config_path = "../configs/reconciliation_example.json"
     
     print("1. Loading Configuration")
     config = ConfigParser.load_config(config_path)

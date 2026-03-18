@@ -2,7 +2,7 @@
   "dataset_name": "Employee_Data",
   "source": {
     "type": "csv",
-    "path": "examples/dummy_employee_data.csv"
+    "path": "../examples/dummy_employee_data.csv"
   },
   "rules": [
     {
